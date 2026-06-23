@@ -10,7 +10,7 @@ import org.mapstruct.Named;
 
 import java.util.Optional;
 
-@Mapper(config = MapperConfig.class)
+@Mapper
 public interface SubjectMapper {
     SubjectDto toDto(Subject subject);
 

@@ -11,7 +11,7 @@ import org.mapstruct.Named;
 
 import java.util.Optional;
 
-@Mapper(config = MapperConfig.class)
+@Mapper
 public interface GroupMapper {
     GroupDto toDto(Group group);
 

@@ -8,7 +8,7 @@ import org.mapstruct.Mapper;
 import org.mapstruct.MapperConfig;
 import org.mapstruct.Mapping;
 
-@Mapper(config = MapperConfig.class) //, uses = {GroupMapper.class, SubjectMapper.class})
+@Mapper //, uses = {GroupMapper.class, SubjectMapper.class})
 public interface StudentMapper {
     //@Mapping(source ="subjects.id", target = "subjectIds")
     //@Mapping(source ="group.id", target = "groupId")
