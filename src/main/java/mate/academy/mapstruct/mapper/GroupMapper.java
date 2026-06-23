@@ -3,13 +3,9 @@ package mate.academy.mapstruct.mapper;
 import mate.academy.mapstruct.dto.group.CreateGroupRequestDto;
 import mate.academy.mapstruct.dto.group.GroupDto;
 import mate.academy.mapstruct.model.Group;
-import org.aspectj.apache.bcel.classfile.Module;
 import org.mapstruct.Mapper;
-import org.mapstruct.MapperConfig;
-import org.mapstruct.MappingTarget;
-import org.mapstruct.Named;
-
 import java.util.Optional;
+import org.mapstruct.Named;
 
 @Mapper
 public interface GroupMapper {
