@@ -1,5 +1,6 @@
 package mate.academy.mapstruct.mapper;
 
+import mate.academy.mapstruct.config.MapperConfig;
 import mate.academy.mapstruct.dto.student.CreateStudentRequestDto;
 import mate.academy.mapstruct.dto.student.StudentDto;
 import mate.academy.mapstruct.dto.student.StudentWithoutSubjectsDto;
@@ -9,7 +10,7 @@ import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Named;
 
-@Mapper(uses = {GroupMapper.class, SubjectMapper.class})
+@Mapper(config = MapperConfig.class, uses = {GroupMapper.class, SubjectMapper.class})
 public interface StudentMapper {
     @Mapping(source = "subjects", target = "subjectIds", qualifiedByName = "subjectToId")
     @Mapping(source = "group.id", target = "groupId")
